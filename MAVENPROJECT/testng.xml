@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-	<listeners>
-		<listener class-name="TestNGUtility.Listeners" />
-	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.TestNG.TestClass"/>
-      <class name="MAVENPROJECT.MAVENPROJECT.App"/>
+      <class name="com.DailyPractice.Annotations">
+      
+      <methods>
+		  <include name="SignInPage"/>
+      </methods>
+      
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
